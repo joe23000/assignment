@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athlete Cost Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Athlete Cost Calculator</h1>
+
+    <form id="athleteForm">
+        <label for="athleteName">Athlete Name:</label><br>
+        <input type="text" id="athleteName" placeholder="Enter athlete's name" required><br><br>
+
+        <label for="trainingPlan">Training Plan:</label><br>
+        <select id="trainingPlan" required>
+      <option value="">Select training plan</option>
+      <option value="Beginner">Beginner</option>
+      <option value="Intermediate">Intermediate</option>
+      <option value="Elite">Elite</option>
+    </select><br><br>
+
+        <label for="currentWeight">Current Weight (kg):</label><br>
+        <input type="number" id="currentWeight" placeholder="Enter current weight" required><br><br>
+
+        <label for="competitionCategory">Competition Weight Category:</label><br>
+        <select id="competitionCategory" required>
+      <option value="">Select weight category</option>
+      <option value="Heavyweight">Heavyweight</option>
+      <option value="Light-Heavyweight">Light-Heavyweight</option>
+      <option value="Middleweight">Middleweight</option>
+      <option value="Light-Middleweight">Light-Middleweight</option>
+      <option value="Lightweight">Lightweight</option>
+      <option value="Flyweight">Flyweight</option>
+    </select><br><br>
+
+        <label for="competitions">Number of Competitions:</label><br>
+        <input type="number" id="competitions" placeholder="Enter number of competitions" required><br><br>
+
+        <label for="privateHours">Private Coaching Hours:</label><br>
+        <input type="number" id="privateHours" placeholder="Enter private coaching hours" required><br><br>
+
+        <button type="button" onclick="calculateAthleteCosts()">Calculate Costs</button>
+    </form>
+
+    <div id="results"></div>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>

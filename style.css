@@ -1,0 +1,166 @@
+/* General Body Styling */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* Use a modern font */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #e3f2fd, #ffffff);
+    /* Gradient background */
+    color: #333;
+    text-align: center;
+}
+
+
+/* Header Styling */
+
+h1 {
+    background: linear-gradient(to right, #007bff, #0056b3);
+    /* Modern gradient */
+    color: white;
+    padding: 20px;
+    margin: 0;
+    font-size: 2.5rem;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Form Container Styling */
+
+form {
+    background: white;
+    margin: 20px auto;
+    padding: 20px 30px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    /* Strong shadow for modern look */
+    border: 1px solid #ddd;
+}
+
+
+/* Input and Select Styling */
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+
+/* Input and Select Focus Effects */
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #007bff;
+    /* Blue focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+/* Button Styling */
+
+button {
+    background: linear-gradient(to right, #007bff, #0056b3);
+    /* Modern button gradient */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+
+/* Button Hover Effect */
+
+button:hover {
+    background: linear-gradient(to right, #0056b3, #003f7f);
+    /* Darker gradient */
+    transform: translateY(-2px);
+    /* Slightly lift button */
+}
+
+
+/* Results Section Styling */
+
+#results {
+    margin: 20px auto;
+    padding: 20px 30px;
+    width: 80%;
+    max-width: 500px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    /* Strong shadow */
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+
+/* Results Text Styling */
+
+#results h2 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 5px;
+}
+
+#results p {
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+
+/* Highlighted Results (Success and Error Messages) */
+
+#results p.success {
+    font-weight: bold;
+    color: #28a745;
+    /* Green for success */
+    background: #eaf8f0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#results p.warning {
+    font-weight: bold;
+    color: #dc3545;
+    /* Red for warnings */
+    background: #fbe9e9;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    form,
+    #results {
+        width: 90%;
+    }
+    input,
+    select,
+    button {
+        font-size: 0.9rem;
+    }
+}
